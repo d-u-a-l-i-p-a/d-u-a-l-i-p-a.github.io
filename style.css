@@ -5,8 +5,9 @@ html {
 body {
   align-items: center;
   justify-content: center;
-  background-color: #222222;
+  background-color:#00acc0;
   color: white;
+  margin: 0%;
 }
 
 .dark-mode {
@@ -26,8 +27,9 @@ body {
 
 header, text {
   font-family: Helvetica;
-  font-weight: 900;
-  margin: 20px;
+  font-weight: bolder;
+  margin: 0%;
+  margin-bottom: 20px ;
 }
 
 .tabcontent {
@@ -40,7 +42,7 @@ header, text {
 }
 
 .note {
-  background-color: grey;
+  background-color: #00b7ff;
   border: none;
   color: white;
   display: inline-block;
@@ -55,10 +57,10 @@ header, text {
 
 .barcode {
   background-color: white;
-  border: grey;
+  border: #00b7ff;
   border-style: solid;
   border-width: 2px;
-  color: grey;
+  color: #00b7ff;
   padding: 5px;
   text-align: center;
   text-decoration: none;
@@ -84,7 +86,7 @@ header, text {
 }
 
 .button {
-  background-color: #04AA6D; /* Green */
+  background-color: #31312f;
   border: none;
   color: white;
   padding: 15px;
@@ -112,7 +114,7 @@ div.scrollmenu a {
 }
 
 .headerbutton {
-  background-color: #A5A4A4;
+  background-color: #00b7ff;
   border: none;
   color: white;
   padding: 10px;
@@ -122,23 +124,23 @@ div.scrollmenu a {
   margin: 4px 3px;
   border-radius: 22px;
   font-family: Helvetica;
-  font-weight: 900;
+  font-weight: bolder;
   transition-duration: 0.5s;
 }
 
 .headerbutton:hover {
-  background-color: #777777;
+  background-color: #0090c9;
 }
 
   .item {
-  border: 1.5px grey solid;
+  border: 1.5px #00b7ff solid;
   border-radius: 20px;
   max-width: 280px;
   max-height: 900px;
   margin: 15px 8px;
   display: inline-block;
   font-family: Helvetica;
-  font-weight: 900;
+  font-weight: bolder;
   }
 
   .img {
@@ -148,11 +150,11 @@ div.scrollmenu a {
     max-height: 75px;
     padding: 15px 5px;
     font-family: Helvetica;
-  font-weight: 900;
+  font-weight: bolder;
   }
   
   .dualipa {
-    background-color: #04AA6D;
+    background-color: #202020;
     border: none;
     color: white;
     padding: 10px;
@@ -162,16 +164,16 @@ div.scrollmenu a {
     margin: 4px 3px;
     border-radius: 18px;
     font-family: Helvetica;
-  font-weight: 900;
+  font-weight: bolder;
     transition-duration: 0.2s;
   }
 
   .dualipa:hover {
-    background-color: #0D8E5F;
+    background-color: #000;
   }
 
   .futurenostalgia {
-    background-color: orangered;
+    background-color: #000063;
     border: none;
     color: white;
     padding: 10px;
@@ -181,16 +183,16 @@ div.scrollmenu a {
     margin: 4px 3px;
     border-radius: 18px;
     font-family: Helvetica;
-  font-weight: 900;
+  font-weight: bolder;
     transition-duration: 0.2s;
   }
 
   .futurenostalgia:hover {
-    background-color: red;
+    background-color: #000035;;
   }
 
   .radicaloptimism {
-    background-color: lightskyblue;
+    background-color: #00acc0;
     border: none;
     color: white;
     padding: 10px;
@@ -200,12 +202,12 @@ div.scrollmenu a {
     margin: 4px 3px;
     border-radius: 18px;
     font-family: Helvetica;
-  font-weight: 900;
+    font-weight: bolder;
     transition-duration: 0.2s;
   }
 
   .radicaloptimism:hover {
-    background-color: red;
+    background-color: #006671;
   }
 
 
@@ -222,7 +224,7 @@ div.scrollmenu a {
     margin: 4px 3px;
     border-radius: 18px;
     font-family: Helvetica;
-  font-weight: 900;
+    font-weight: bolder;
     transition-duration: 0.2s;
   }
 
@@ -230,3 +232,36 @@ div.scrollmenu a {
     background-color: #d2bc88;
     color: white;
   }
+
+
+  @keyframes moveRight {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.wave{
+  margin-top: 0%;
+  color: #00acc0;
+  font-size: 48px;
+  background-image: url('https://i.ibb.co/Ws8j9mv/wave.png');
+  background-repeat: repeat-x;
+  animation: moveRight 30s linear infinite;
+}
+
+.invisible-blue {
+  color: #00acc0;
+}
+
+.helvetica-bg {
+  font-weight:bolder;
+  font-size: 72px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 900;
+  background-color: #00b7ff;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}

@@ -3,14 +3,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
     <script src="https://kit.fontawesome.com/a41ac15706.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
    <head>
-      <title>dua lipa collecting guide</title>
+      <title>Dua Lipa - Non Official</title>
       </head> 
    <body>
-      <header>   
-        <button class="radicaloptimism" onclick="openTab(event, 'home')">Home</button>
+    <header>
+      <h1 class="helvetica-bg">​ ​</h1>
+      <h1 class="helvetica-bg">welcome to the</h1>
+      <h1 class="helvetica-bg">non-official Dua Lipa website</h1>
+      <h1 class="helvetica-bg">​ ​</h1>
+      <h1 class="helvetica-bg">​ ​</h1>
+      <h1 class="helvetica-bg">​ ​</h1>
+      <p class="wave">​ ​</p>
+      <h1 class="tab" style="font-size: 72px; font-weight: 900;" >find all her album in any format</h1>
+    </header>
+      <header> 
         <a href="vinyl.html" class="headerbutton">Vinyl</a>
-        <a href="index.html" class="futurenostalgia">CD</a>
+        <a href="index.html" class="headerbutton">CD</a>
         <a href="cassette.html" class="headerbutton">Cassette</a>
         </button>
     </a>
@@ -24,9 +34,7 @@
        <div id="dualipa" class="tabcontent">
          <text>
           <h1>Dua Lipa</h1>
-          <h3>Album</h3>
          </text>
-
          <div class="item">
           <img src="./assets/cd_dualipa.jpg" alt="Dua Lipa CD Album Cover" class="img">
           <h2>Standard Edition</h2>
@@ -62,9 +70,7 @@
         <div id="futurenostalgia" class="tabcontent">
           <text>
            <h1>Future Nostalgia</h1>
-           <h3>Album</h3>
           </text>
- 
           <div class="item">
            <img src="./assets/cover_futurenostalgia.jpg" alt="Future Nostalgia CD Album Cover" class="img">
            <h2>Standard Edition (Digisleeve)</h2>
@@ -127,9 +133,7 @@
            <div id="radicaloptimism" class="tabcontent">
             <text>
              <h1>Radical Optimism</h1>
-             <h3>Album</h3>
             </text>
-   
             <div class="item">
              <img src="./assets/cd_ro.jpg" alt="Radical Optimism CD Album Cover" class="img">
              <h2>Lenticular Standard Edition</h2>
@@ -181,5 +185,16 @@
       }
 
       
+      </script>
+      <script>
+        window.addEventListener('scroll', function() {
+          // Calculate the opacity based on scroll position
+          var opacity = Math.min(1, window.scrollY / 1000); // You can adjust the 500 to change the rate of darkening
+          // Calculate the intermediate color
+          var g = Math.round(63 + (1 - opacity) * (172 - 63));
+          var b = Math.round(97 + (1 - opacity) * (192 - 97));
+          // Set the background color with opacity
+          document.body.style.backgroundColor = `rgb(0, ${g}, ${b})`;
+        });
       </script>
 </html>
