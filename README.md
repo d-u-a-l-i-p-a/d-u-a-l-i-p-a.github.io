@@ -10,4 +10,4 @@ Made by [cxz (@cxcxz on Discord)](https://github.com/cxzgt) and [Casters (@cargl
 #### Copyright disclaimer
 Not affilated with Warner Records, Universal Music Group, UMG Australia, Dua Lipa, and/or any other company. This is a fan-made project.
 
-###### - d-u-a-l-i-p-a
+###### - Casters and cxz
