@@ -1,0 +1,232 @@
+html {
+  text-align: center;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  color: white;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+.image-btn {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.image-btn img {
+  display: block;
+}
+
+header, text {
+  font-family: Helvetica;
+  font-weight: 900;
+  margin: 20px;
+}
+
+.tabcontent {
+  animation: fadeEffect 0.3s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.note {
+  background-color: grey;
+  border: none;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  margin: 10px 1px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.barcode {
+  background-color: white;
+  border: grey;
+  border-style: solid;
+  border-width: 2px;
+  color: grey;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 15px 1px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.incl {
+  background-color: orangered;
+  border: none;
+  color: white;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 15px 1px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 1px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+div.scrollmenu {
+  background-color: transparent;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.headerbutton {
+  background-color: #A5A4A4;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 3px;
+  border-radius: 22px;
+  font-family: Helvetica;
+  font-weight: 900;
+  transition-duration: 0.5s;
+}
+
+.headerbutton:hover {
+  background-color: #777777;
+}
+
+  .item {
+  border: 1.5px grey solid;
+  border-radius: 20px;
+  max-width: 280px;
+  max-height: 900px;
+  margin: 15px 8px;
+  display: inline-block;
+  font-family: Helvetica;
+  font-weight: 900;
+  }
+
+  .img {
+    display: flex;
+    display: inline-block;
+    max-width: 75px;
+    max-height: 75px;
+    padding: 15px 5px;
+    font-family: Helvetica;
+  font-weight: 900;
+  }
+  
+  .dualipa {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 3px;
+    border-radius: 18px;
+    font-family: Helvetica;
+  font-weight: 900;
+    transition-duration: 0.2s;
+  }
+
+  .dualipa:hover {
+    background-color: #0D8E5F;
+  }
+
+  .futurenostalgia {
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 3px;
+    border-radius: 18px;
+    font-family: Helvetica;
+  font-weight: 900;
+    transition-duration: 0.2s;
+  }
+
+  .futurenostalgia:hover {
+    background-color: red;
+  }
+
+  .radicaloptimism {
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 3px;
+    border-radius: 18px;
+    font-family: Helvetica;
+  font-weight: 900;
+    transition-duration: 0.2s;
+  }
+
+  .radicaloptimism:hover {
+    background-color: red;
+  }
+
+
+  .stf {
+    background-color: #d6e9ff;
+    border: none;
+    display: block;
+    align-self: center;
+    color: blue;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 4px 3px;
+    border-radius: 18px;
+    font-family: Helvetica;
+  font-weight: 900;
+    transition-duration: 0.2s;
+  }
+
+  .stf:hover {
+    background-color: #d2bc88;
+    color: white;
+  }
