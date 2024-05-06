@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
-    <script src="https://kit.fontawesome.com/a41ac15706.js" crossorigin="anonymous"></script>
-   <head>
-      <title>dua lipa collecting guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a41ac15706.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <head>
+      <title>Dua Lipa - Non Official</title>
       </head> 
    <body>
-      <header>   
-        <button class="radicaloptimism" onclick="openTab(event, 'home')">Home</button>
-        <a href="vinyl.html" class="futurenostalgia">Vinyl</a>
+    <header>
+      <h1 class="helvetica-bg">​ ​</h1>
+      <h1 class="helvetica-bg">welcome to the</h1>
+      <h1 class="helvetica-bg">non-official Dua Lipa website</h1>
+      <h1 class="helvetica-bg">​ ​</h1>
+      <h1 class="helvetica-bg">​ ​</h1>
+      <h1 class="helvetica-bg">​ ​</h1>
+      <p class="wave">​ ​</p>
+      <h1 class="tab" style="font-size: 72px; font-weight: 900;" >find all her album in any format</h1>
+    </header>
+      <header> 
         <a href="index.html" class="headerbutton">CD</a>
+        <a href="vinyl.html" class="headerbutton">Vinyl</a>
         <a href="cassette.html" class="headerbutton">Cassette</a>
         </button>
     </a>
@@ -24,7 +34,6 @@
        <div id="dualipa" class="tabcontent">
          <text>
           <h1>Dua Lipa</h1>
-          <h3>Album</h3>
          </text>
 
          <div class="item">
@@ -251,26 +260,15 @@
 
           </div>
 
+          <div id="radicaloptimism" class="tabcontent">
+            <text>
+             <h1>Radical Optimism</h1>
+             <h1>WIP</h1>
+            </text>
+  
+            </div>
+
       </main>
    
     </body>
-
-    <script>
-      document.getElementById("defaultOpen").click();
-      function openTab(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-
-      
-      </script>
 </html>
