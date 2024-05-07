@@ -2,6 +2,8 @@
 ### An open-source list of all Dua Lipa physical releases
 All Dua Lipa cassettes, CDs, and Vinyl (records) with short information, barcodes, release dates, and more in this physical collecting guide!
 
+## Click the button or [here](https://d-u-a-l-i-p-a.github.io/) to enter website
+
 <br>
 
 [<kbd> <br> Enter website <br> </kbd>][Enter]
