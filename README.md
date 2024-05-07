@@ -4,7 +4,7 @@ All Dua Lipa cassettes, CDs, and Vinyl (records) with short information, barcode
 
 <br>
 
-[<kbd> <br> Enter website <br> </kbd>]['d-u-a-l-i-p-a.github.io]
+[<kbd> <br> Enter website <br> </kbd>]['d-u-a-l-i-p-a.github.io']
 
 <br>
 
