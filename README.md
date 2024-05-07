@@ -13,8 +13,9 @@ Made by [cxz (@cxcxz on Discord)](https://github.com/cxzgt) and [Casters (@cargl
 Not affilated with Warner Records, Universal Music Group, UMG Australia, Dua Lipa, and/or any other company. This is a fan-made project.
 
 ###### - Casters and cxz
-
-[Link]: # '['https://d-u-a-l-i-p-a.github.io/']
+```markdown
+[Link]: # 'https://d-u-a-l-i-p-a.github.io/'
+```markdown
 [Button Example]:
-https://img.shields.io/badge/Title-37a779?style=for-the-badge
+https://img.shields.io/badge/Enter-website-37a779?style=for-the-badge
 
