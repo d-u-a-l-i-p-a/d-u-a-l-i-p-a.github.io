@@ -1,6 +1,8 @@
 # [Dua Lipa Fan Website](https://d-u-a-l-i-p-a.github.io/)
 ![maintained](https://raster.shields.io/badge/status-maintained-green.png)
 
+![banner](./github/banner.png)
+
 The Dua Lipa Unofficial Fan Website includes many things from:
 - Collection guide: find all Dua's Vinyl, CDs, Cassettes with release date, images, barcodes, and more
 - Countdown of her previous album releases
