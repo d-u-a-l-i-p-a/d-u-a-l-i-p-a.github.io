@@ -171,6 +171,28 @@ div.scrollmenu a {
     font-family: Helvetica;
   font-weight: bolder;
   }
+
+  .buttonicon {
+    display: flex;
+    display: inline-block;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 4px 4px;
+  }
+  
+  .iconbutton {
+    background-color: #31312f;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 1px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
   
   .dualipa {
     background-color: #202020;
