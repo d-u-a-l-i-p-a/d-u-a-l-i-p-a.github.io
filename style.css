@@ -5,7 +5,7 @@ html {
 body {
   align-items: center;
   justify-content: center;
-  background-color:#00acc0;
+  background-color:#00173d;
   color: white;
   margin: 0%;
 }
@@ -247,7 +247,7 @@ div.scrollmenu a {
   margin-top: 0%;
   color: #00acc0;
   font-size: 48px;
-  background-image: url('https://i.ibb.co/Ws8j9mv/wave.png');
+  background-image: url('./assets/wave.png');
   background-repeat: repeat-x;
   animation: moveRight 30s linear infinite;
 }
@@ -256,12 +256,21 @@ div.scrollmenu a {
   color: #00acc0;
 }
 
-.helvetica-bg {
+.helvetica-title {
   font-weight:bolder;
   font-size: 72px;
   font-family: Helvetica, sans-serif;
   font-weight: 900;
-  background-color: #00b7ff;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.helvetica-title-bg {
+  background-color: #5294ff;
+  font-weight:bolder;
+  font-size: 72px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 900;
   margin-top: 0%;
   margin-bottom: 0%;
 }
