@@ -13,13 +13,14 @@ We gathered all of her physical releases (LP, CD & Cassette) from all her projec
 - Find the [Vinyl releases](https://d-u-a-l-i-p-a.github.io/vinyl.html)
 - Find the [CD releases](https://d-u-a-l-i-p-a.github.io/index.html)
 - Find the [Cassette releases](https://d-u-a-l-i-p-a.github.io/cassette.html)
+- Find her music streaming albums [here](https://d-u-a-l-i-p-a.github.io/stream.html)
 
 ### Made by fans, for fans <sup><sub>(or Dua Lipa but there is no way she actually sees this)</sub></sup>
 Made by [cxz (@cxcxz on Discord)](https://github.com/cxzgt) and [Casters (@carglass.fr on Discord)](https://github.com/notironicallycasters)
 
 ### Notes
 
-#### Copyright disclaimer
+#### [Copyright disclaimer](./github/COPYRIGHT-DISCLAIMER.md)
 Not affilated with Warner Records, Universal Music Group, UMG Australia, Dua Lipa, and/or any other company. This is a fan-made project.
 
 ###### - Casters and cxz
