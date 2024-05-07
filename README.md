@@ -16,6 +16,7 @@ Not affilated with Warner Records, Universal Music Group, UMG Australia, Dua Lip
 
 <!---------------------------------------------------------------------------->
 
-[Link]: # 'https://d-u-a-l-i-p-a.github.io'
 [Button Example]: https://img.shields.io/badge/Enter-website-37a779?style=for-the-badge
+
+[Link]: # 'https://d-u-a-l-i-p-a.github.io'
 
