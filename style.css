@@ -132,6 +132,25 @@ div.scrollmenu a {
   background-color: #0090c9;
 }
 
+.selectedheaderbutton {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 3px;
+  border-radius: 22px;
+  font-family: Helvetica;
+  font-weight: bolder;
+  transition-duration: 0.5s;
+}
+
+.selectedheaderbutton:hover {
+  background-color: yellowgreen;
+}
+
   .item {
   border: 1.5px #00b7ff solid;
   border-radius: 20px;
