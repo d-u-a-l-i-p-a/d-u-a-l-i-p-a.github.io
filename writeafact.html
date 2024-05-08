@@ -102,7 +102,7 @@
 
     
 function saveFact(fact) {
-    fetch('https://raw.githubusercontent.com/d-u-a-l-i-p-a/d-u-a-l-i-p-a.github.io/main/server/facts.json')
+    fetch('./server/facts.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -114,7 +114,7 @@ function saveFact(fact) {
         return data;
     })
     .then(data => {
-        return fetch('https://raw.githubusercontent.com/d-u-a-l-i-p-a/d-u-a-l-i-p-a.github.io/main/server/facts.json', {
+        return fetch('./server/facts.json', {
             method: 'PUT', // or 'POST' depending on your GitHub settings
             headers: {
                 'Content-Type': 'application/json'
@@ -128,7 +128,7 @@ function saveFact(fact) {
 
     
 function displayFacts() {
-    fetch('https://raw.githubusercontent.com/d-u-a-l-i-p-a/d-u-a-l-i-p-a.github.io/main/server/facts.json')
+    fetch('./server/facts.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
