@@ -10,6 +10,11 @@ body {
   margin: 0%;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 .dark-mode {
   background-color: white;
   color: black;
@@ -111,23 +116,13 @@ h2 {
   border-radius: 40px;
 }
 
-.colorblue {
-  background-color: #5294ff;  
-}
-
 .scrollmenu {
-  background-color: #5294ff;
   overflow-x: auto;
   white-space: nowrap;
   cursor: grab; /* Set cursor to grab */
 }
 
-.scrollmenutransparent {
-  background-color: transparent;
-  overflow-x: auto;
-  white-space: nowrap;
-  cursor: grab; /* Set cursor to grab */
-}
+
 
 /* Set cursor to grabbing while dragging */
 .scrollmenu.dragging {

@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var transitionPoint1 = 500;
   var pausePoint = 600;
-  var transitionPoint2 = 2400;
+  var transitionPoint2 = 3000;
 
   var opacity, r, g, b;
 
@@ -29,7 +29,7 @@ window.addEventListener('scroll', function() {
     var skyElements = document.querySelectorAll("#sky");
     skyElements.forEach(function(element) {
         element.classList.add("helvetica-title-bg");
-        element.classList.remove("helvetica-bg"); // Supprime la classe "helvetica-bg" au cas où elle aurait été ajoutée précédemment
+        element.classList.remove("helvetica-bg");
     });
 } else {
     var skyElements = document.querySelectorAll("#sky");
@@ -40,9 +40,13 @@ window.addEventListener('scroll', function() {
 }
 });
 
+document.addEventListener("DOMContentLoaded", function(event) { 
+  var scrollpos = localStorage.getItem('scrollpos');
+  if (scrollpos) window.scrollTo(0, scrollpos);
+});
 
 window.onbeforeunload = function(e) {
-    localStorage.setItem('scrollpos', window.scrollY);
+  localStorage.setItem('scrollpos', window.scrollY);
 };
 
 document.getElementById("defaultOpen").click();
