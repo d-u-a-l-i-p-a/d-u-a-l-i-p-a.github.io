@@ -102,7 +102,7 @@
 
     
 function saveFact(fact) {
-    fetch('dualipa-facts-host.vercel.app/facts.json')
+    fetch('https://dualipa-facts-host.vercel.app/facts.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -114,7 +114,7 @@ function saveFact(fact) {
         return data;
     })
     .then(data => {
-        return fetch('dualipa-facts-host.vercel.app/facts.json', {
+        return fetch('https://dualipa-facts-host.vercel.app/facts.json', {
             method: 'PUT', // or 'POST' depending on your GitHub settings
             headers: {
                 'Content-Type': 'application/json'
@@ -128,7 +128,7 @@ function saveFact(fact) {
 
     
 function displayFacts() {
-    fetch('dualipa-facts-host.vercel.app/facts.json')
+    fetch('https://dualipa-facts-host.vercel.app/facts.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
