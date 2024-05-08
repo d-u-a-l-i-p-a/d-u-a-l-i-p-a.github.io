@@ -50,7 +50,7 @@ header, text {
   text-align: center;
   text-decoration: none;
   font-size: 11px;
-  margin: 10px 1px;
+  margin: 10px 15px;
   cursor: pointer;
   border-radius: 20px;
 }
@@ -99,18 +99,27 @@ header, text {
   border-radius: 25px;
 }
 
-div.scrollmenu {
-  background-color: transparent;
-  overflow: auto;
-  white-space: nowrap;
+.colorblue {
+  background-color: #5294ff;  
 }
 
-div.scrollmenu a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+.scrollmenu {
+  background-color: #5294ff;
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: grab; /* Set cursor to grab */
+}
+
+.scrollmenutransparent {
+  background-color: transparent;
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: grab; /* Set cursor to grab */
+}
+
+/* Set cursor to grabbing while dragging */
+.scrollmenu.dragging {
+  cursor: grabbing;
 }
 
 .headerbutton {
@@ -162,6 +171,39 @@ div.scrollmenu a {
   font-weight: bolder;
   }
 
+  .funfact {
+    border: 1.5px #00b7ff solid;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin: 20px 15px;
+    display: inline-flex; /* Use inline-flex */
+    align-items: center;
+    font-family: Helvetica;
+    font-weight: bolder;
+    height: 50px;
+  }
+  
+  .funfactimg {
+    width: 45px;
+    height: 45px;
+    padding: 15px 15px;
+    font-family: Helvetica;
+    font-weight: bolder;
+  }
+  
+  .funfactnote {
+    background-color: #00b7ff;
+    border: none;
+    color: white;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    margin: 0 15px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
   .img {
     display: flex;
     display: inline-block;
@@ -169,8 +211,10 @@ div.scrollmenu a {
     max-height: 75px;
     padding: 15px 5px;
     font-family: Helvetica;
-  font-weight: bolder;
+    font-weight: bolder;
   }
+
+
 
   .buttonicon {
     display: flex;
