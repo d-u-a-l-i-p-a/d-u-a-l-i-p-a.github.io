@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a41ac15706.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <head>
+      <title>Dua Lipa - Non Official</title>
+      </head> 
+   <body>
+    <header>
+      <img src="./assets/moon.png" style="max-width: 30%;margin-left: 0%;">
+      <h1 class="helvetica-title" id="sky">​ ​</h1>
+      <h1 class="helvetica-title" id="sky">write your own</h1>
+      <h1 class="helvetica-title" id="sky">Dua Lipa fun fact and share it</h1>
+      <h1 class="helvetica-title" id="sky">​ ​</h1>
+
+      <div>
+        <form id="factForm" action="#">
+          <label for="name">who's writing this fact?</label>
+          <input type="text" id="fname" name="firstname" placeholder="your name (will be public)">
+
+          <label for="fact">write your fact</label>
+          <input type="text" id="lname" name="lastname" placeholder="fun fact here!">
+
+          <label for="album">what's your favorite album?</label>
+          <select id="album" name="album">
+            <option value="dualipa">self-titled</option>
+            <option value="future nostalgia">future nostalgia</option>
+            <option value="radicaloptimism">radical optimism</option>
+          </select>
+
+          <input type="submit" value="submit your fun fact">
+        </form>
+      </div>
+      </main>
+    </body>
+
+    <div id="factsContainer">
+        <h2>Fun Facts</h2>
+        <ul id="factsList"></ul>
+    </div>
+
+    <style>
+
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 40px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 7px;
+          margin: 4px 0;
+          border: none;
+          border-radius: 40px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          background-color: transparent;
+          padding: 200px;
+        }
+    
+    </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('factForm');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form data
+            const formData = new FormData(form);
+            const factObject = {};
+            formData.forEach(function(value, key) {
+                factObject[key] = value;
+            });
+
+            // Save fact
+            saveFact(factObject);
+
+            // Reset form
+            form.reset();
+        });
+    } else {
+        console.error("Form element not found.");
+    }
+});
+
+    
+function saveFact(fact) {
+    fetch('https://raw.githubusercontent.com/d-u-a-l-i-p-a/d-u-a-l-i-p-a.github.io/main/server/facts.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        data.push(fact);
+        return data;
+    })
+    .then(data => {
+        return fetch('https://raw.githubusercontent.com/d-u-a-l-i-p-a/d-u-a-l-i-p-a.github.io/main/server/facts.json', {
+            method: 'PUT', // or 'POST' depending on your GitHub settings
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+    })
+    .then(() => displayFacts())
+    .catch(error => console.error('Error saving fact:', error));
+}
+
+    
+function displayFacts() {
+    fetch('https://raw.githubusercontent.com/d-u-a-l-i-p-a/d-u-a-l-i-p-a.github.io/main/server/facts.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        factsList.innerHTML = '';
+        data.forEach(fact => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Name: ${fact.name}, Fact: ${fact.fact}, Album: ${fact.album}`;
+            factsList.appendChild(listItem);
+        });
+    })
+    .catch(error => console.error('Error displaying facts:', error));
+}
+
+    
+        displayFacts();
+    
+    </script>
+
+</html>
