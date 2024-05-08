@@ -5,7 +5,7 @@
     <script src="https://kit.fontawesome.com/a41ac15706.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
    <head>
-      <title>Dua Lipa - Non Official</title>
+      <title>Share a fact | Dua Lipa - Non Official</title>
       </head> 
    <body>
     <header>
@@ -102,7 +102,7 @@
 
     
 function saveFact(fact) {
-    fetch('./server/facts.json')
+    fetch('https://firebasestorage.googleapis.com/v0/b/dualipa-fanwebsite.appspot.com/o/facts.json?alt=media&token=dbc4e751-0474-447e-bc60-05dae6621312')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -114,7 +114,7 @@ function saveFact(fact) {
         return data;
     })
     .then(data => {
-        return fetch('./server/facts.json', {
+        return fetch('https://firebasestorage.googleapis.com/v0/b/dualipa-fanwebsite.appspot.com/o/facts.json?alt=media&token=dbc4e751-0474-447e-bc60-05dae6621312', {
             method: 'PUT', // or 'POST' depending on your GitHub settings
             headers: {
                 'Content-Type': 'application/json'
@@ -128,7 +128,7 @@ function saveFact(fact) {
 
     
 function displayFacts() {
-    fetch('./server/facts.json')
+    fetch('https://firebasestorage.googleapis.com/v0/b/dualipa-fanwebsite.appspot.com/o/facts.json?alt=media&token=dbc4e751-0474-447e-bc60-05dae6621312')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
