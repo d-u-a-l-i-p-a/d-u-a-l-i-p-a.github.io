@@ -1,8 +1,8 @@
 window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var transitionPoint1 = 500;
-  var pausePoint = 900;
-  var transitionPoint2 = 2000;
+  var pausePoint = 600;
+  var transitionPoint2 = 2400;
 
   var opacity, r, g, b;
 

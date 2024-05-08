@@ -46,13 +46,23 @@ header, text {
   border: none;
   color: white;
   display: inline-block;
-  padding: 5px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   font-size: 11px;
-  margin: 10px 15px;
+  margin: 10px 5px;
   cursor: pointer;
   border-radius: 20px;
+}
+
+.type, .release, .label {
+  font-family: Helvetica;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: Helvetica;
+  font-weight: bolder;
 }
 
 .barcode {
@@ -60,13 +70,13 @@ header, text {
   border: #00b7ff;
   border-style: solid;
   border-width: 2px;
-  color: #00b7ff;
-  padding: 5px;
+  color: black;
+  padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 11px;
-  margin: 15px 1px;
+  margin: 10px 1px;
   cursor: pointer;
   border-radius: 25px;
 }
@@ -87,7 +97,9 @@ header, text {
 
 .button {
   background-color: #31312f;
-  border: none;
+  border: solid;
+  border-width: 3.2px;
+  border-color: white;
   color: white;
   padding: 15px;
   text-align: center;
@@ -96,7 +108,7 @@ header, text {
   font-size: 16px;
   margin: 25px 1px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 40px;
 }
 
 .colorblue {
@@ -122,7 +134,57 @@ header, text {
   cursor: grabbing;
 }
 
+.container {
+  position: relative;
+  width: 100%; /* Or any other width you prefer */
+  height: auto; /* Adjust as needed */
+  text-align: center; /* Horizontally center the absolutely positioned moon */
+}
+
+.stars, .moon {
+  position: absolute;
+  top: 0;
+  left: 50%; /* Position from the center */
+  transform: translateX(-50%); /* Adjust horizontally to center */
+}
+
+.stars {
+  max-width: 100%;
+  z-index: 1; /* Adjust the z-index value to control stacking order */
+}
+
+.moon {
+  max-width: 70%;
+  margin-left: 0%;
+  z-index: 2; /* Adjust the z-index value to control stacking order */
+}
+
+
+
+
+
+.menubutton {
+  text-shadow: 1px 1px grey;
+  background-color: #00b7ff;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 20px 6px;
+  border-radius: 22px;
+  font-family: Helvetica;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.menubutton:hover {
+  background-color: #0090c9;
+}
+
 .headerbutton {
+  text-shadow: 1px 1px grey;
   background-color: #00b7ff;
   border: none;
   color: white;
@@ -133,7 +195,7 @@ header, text {
   margin: 4px 3px;
   border-radius: 22px;
   font-family: Helvetica;
-  font-weight: bolder;
+  font-weight: bold;
   transition-duration: 0.5s;
 }
 
@@ -161,31 +223,32 @@ header, text {
 }
 
   .item {
-  border: 1.5px #00b7ff solid;
-  border-radius: 20px;
-  max-width: 280px;
+  border: 4px #00b7ff solid;
+  border-radius: 40px;
+  max-width: 400px;
   max-height: 900px;
   margin: 15px 8px;
+  padding: 0px 5px;
   display: inline-block;
   font-family: Helvetica;
   font-weight: bolder;
   }
 
   .funfact {
-    border: 1.5px #00b7ff solid;
-    border-radius: 20px;
+    border: 2px #00b7ff solid;
+    border-radius: 40px;
     padding: 0 15px;
     margin: 20px 15px;
     display: inline-flex; /* Use inline-flex */
     align-items: center;
     font-family: Helvetica;
-    font-weight: bolder;
-    height: 50px;
+    font-weight: bold;
+    height: 60px;
   }
   
   .funfactimg {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     padding: 15px 15px;
     font-family: Helvetica;
     font-weight: bolder;
@@ -195,10 +258,10 @@ header, text {
     background-color: #00b7ff;
     border: none;
     color: white;
-    padding: 9px;
+    padding: 9px 30px;
     text-align: center;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 19px;
     margin: 0 15px;
     cursor: pointer;
     border-radius: 20px;
